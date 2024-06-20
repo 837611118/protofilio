@@ -1,0 +1,41 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$bg-color: #f7f9fc;
+$border-color: #e0e4e8;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+// Base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+// Grid and Flexbox styles
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Other styles (to be extended based on existing style.css)

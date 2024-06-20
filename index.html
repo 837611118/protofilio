@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <section class="logo">Abdul.</section>
+        <section>
+          <ul class="nav-links">
+            <li><a href="#about">Over mij</a></li>
+            <li><a href="#experience">Ervaring</a></li>
+            <li><a href="#projects">Projecten</a></li>
+            <li><a href="#contact">Contactgegevens</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    
+    <nav id="hamburger-nav">
+      <section class="logo">Abdul.</section>
+      <section class="hamburger-menu">
+        <section class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </section>
+        <section class="menu-links">
+          <ul>
+          <li><a href="#about" onclick="toggleMenu()">Over mij</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Ervaring</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projecten</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+         
+        </section>
+      </section>
+    </nav>
+    <section id="profile">
+      <section class="section__pic-container">
+        <img src="./assets/Abdul1.jpg" class="img" alt="Abdulrahman Argalah profielfoto" />
+      </section>
+      <section class="section__text">
+        <p class="section__text__p1">Hallo, ik ben</p>
+        <h1 class="title">Abdulrahman Argalah</h1>
+        <p class="section__text__p2">Softwareontwikkelaar</p>
+        <section class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CVAbdulrahman.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contactgegevens
+          </button>
+        </section>
+        <section id="socials-container">
+          <img
+            src="./assets/github.png"
+            alt="Mijn Github profiel"
+            class="icon"
+            onclick="location.href='https://github.com/837611118'"
+          />
+        </section>
+      </section>
+    </section>
+    <section id="about">
+      <h1 class="title">Over Mij</h1>
+      <section class="section-container">
+        <section class="section__pic-container">
+          <img
+            src="./assets/Abdul2.jpg"
+            alt="Profielfoto"
+            class="about-pic"
+          />
+        </section>
+        <section class="about-details-container">
+          <section class="about-containers">
+            <section class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Ervaring icoon"
+                class="icon"
+              />
+              <h3>Ervaring</h3>
+              <p>1 jaar <br />Softwareontwikkelaar</p>
+            </section>
+            <section class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Opleiding icoon"
+                class="icon"
+              />
+              <h3>Opleiding</h3>
+              <p>Techniek College Rotterdam</p>
+            </section>
+          </section>
+          <section class="text-container">
+            <p>
+              Mijn naam is Abdulrahman Argalah. Ik ben Jemenitisch. Ik woon nu in Nederland. Ik studeer nu aan de TCR School. Ik zit nu in mijn eerste jaar, gespecialiseerd in softwareontwikkeling.
+            </p>
+          </section>
+        </section>
+      </section>
+      <img
+        src="./assets/arrow.png"
+        alt="Pijl icoon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section id="experience">
+      <h1 class="title">Ervaring</h1>
+      <section class="experience-details-container">
+        <section class="about-containers">
+          <section class="details-container">
+            <h2 class="experience-sub-title">Frontend Ontwikkeling</h2>
+            <section class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ervaring icoon"
+                  class="icon"
+                />
+                <section>
+                  <h3>HTML</h3>
+                  <p>Expertise</p>
+                </section>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ervaring icoon"
+                  class="icon"
+                />
+                <section>
+                  <h3>CSS</h3>
+                  <p>Expertise</p>
+                </section>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ervaring icoon"
+                  class="icon"
+                />
+                <section>
+                  <h3>JavaScript</h3>
+                  <p>Expertise</p>
+                </section>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ervaring icoon"
+                  class="icon"
+                />
+                <section>
+                  <h3>PHP</h3>
+                  <p>Basis</p>
+                </section>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Ervaring icoon"
+                  class="icon"
+                />
+                <section>
+                  <h3>PostgreSQL</h3>
+                  <p>Basis</p>
+                </section>
+              </article>
+              <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Ervaring icoon"
+                    class="icon"
+                  />
+                  <section>
+                    <h3>Git</h3>
+                    <p>Expertise</p>
+                  </section>
+                </article>
+            </section>
+          </section>
+        </section>
+      </section>
+      <img
+        src="./assets/arrow.png"
+        alt="Pijl icoon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <h1 class="title">Projecten en mijn School</h1>
+      <section class="experience-details-container">
+        <section class="about-containers">
+          <section class="details-container color-container">
+            <section class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </section>
+            <h2 class="experience-sub-title project-title">Project 1</h2>
+          </section>
+          <section class="details-container color-container">
+            <section class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </section>
+            <h2 class="experience-sub-title project-title">Project 2</h2>
+            <section class="btn-container">
+            </section>
+          </section>
+          <section class="details-container color-container">
+            <section class="article-container">
+              <img
+                src="./assets/SCHOOL.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </section>
+            <h2 class="experience-sub-title project-title">Mijn School</h2>
+          </section>
+        </section>
+      </section>
+      <img
+        src="./assets/arrow.png"
+        alt="Pijl icoon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact mij</h1>
+      <section class="contact-info-upper-container">
+        <section class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icoon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:abdulrahman.n776@gmail.com">abdulrahman.n776@gmail.com</a></p>
+        </section>
+      </section>
+    </section>
+    <footer>
+      <nav>
+        <section class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#">Over mij</a></li>
+            <li><a href="#">Ervaring</a></li>
+            <li><a href="#">Projecten</a></li>
+            <li><a href="#">Contactgegevens</a></li>
+          </ul>
+        </section>
+      </nav>
+      <p>Abdulrahman Argalah &copy; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
