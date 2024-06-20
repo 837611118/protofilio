@@ -7,6 +7,7 @@
     <title>Mijn Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="SASS.scss">
   </head>
   <body>
     <header>
@@ -42,10 +43,10 @@
         </section>
       </section>
     </nav>
-    <section id="profile">
-      <section class="section__pic-container">
+    <main id="profile">
+      <main class="section__pic-container">
         <img src="./assets/Abdul1.jpg" class="img" alt="Abdulrahman Argalah profielfoto" />
-      </section>
+      </main>
       <section class="section__text">
         <p class="section__text__p1">Hallo, ik ben</p>
         <h1 class="title">Abdulrahman Argalah</h1>
@@ -70,7 +71,7 @@
           />
         </section>
       </section>
-    </section>
+    </main>
     <section id="about">
       <h1 class="title">Over Mij</h1>
       <section class="section-container">
@@ -146,7 +147,7 @@
                   <p>Expertise</p>
                 </section>
               </article>
-              <article>
+              <article class="grid-item">
                 <img
                   src="./assets/checkmark.png"
                   alt="Ervaring icoon"
@@ -259,6 +260,10 @@
         </section>
       </section>
     </section>
+    <section class="grid-container">
+      <article class="grid-item">+31685538190</article>
+      <article class="grid-item">Adres:oud-Beijerland<br> 3261BS<br>Ranomkelstraat 61 </article>
+  </section>
     <footer>
       <nav>
         <section class="nav-links-container">

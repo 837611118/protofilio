@@ -26,6 +26,25 @@ body {
   padding: 0 20px;
 }
 
+main {
+  display: grid;
+  gap: 20px;
+  
+}
+
+header {
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
 /* Overgangen */
 a,
 .btn {
@@ -147,7 +166,7 @@ section {
 }
 
 .section__pic-container {
-  display: flex;
+  display: grid;
   align-items: center ;
   justify-content: center;
   border-radius: 50%;
@@ -365,3 +384,16 @@ footer .nav-links a:hover {
 }
 
 
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Voorbeeld grid-template-columns */
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
